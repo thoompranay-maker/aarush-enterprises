@@ -37,3 +37,15 @@
 }
 
 }
+
+.service-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.service-card:last-child{
+
+    grid-column:span 2;
+
+}
