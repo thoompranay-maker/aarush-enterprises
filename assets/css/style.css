@@ -1,81 +1,84 @@
-/* ===========================
-   GLOBAL STYLES
-=========================== */
+/* =====================================================
+   AARUSH ENTERPRISES
+   Version : 1.0
+   Author  : Pranay
+===================================================== */
+
+
+/* =====================
+   CSS VARIABLES
+===================== */
+
+:root{
+
+    --primary:#0A4D9F;
+
+    --secondary:#F4B400;
+
+    --dark:#1F2937;
+
+    --light:#F8FAFC;
+
+    --gray:#6B7280;
+
+    --white:#ffffff;
+
+}
+
+
+/* =====================
+   RESET
+===================== */
 
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
 }
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
 
 body{
 
     font-family:'Inter',sans-serif;
-    background:#f8fafc;
-    color:#222;
+
+    background:var(--light);
+
+    color:var(--dark);
+
+    overflow-x:hidden;
+
 }
 
-/* ===========================
-   NAVBAR
-=========================== */
 
-.navbar{
-
-    padding:18px 0;
-}
-
-.navbar-brand{
+h1,h2,h3,h4,h5,h6{
 
     font-family:'Poppins',sans-serif;
-    font-size:28px;
+
     font-weight:700;
-    color:#0A4D9F;
+
 }
 
-.nav-link{
 
-    margin-left:25px;
-    font-weight:500;
+a{
+
+    text-decoration:none;
+
 }
 
-/* ===========================
-   HERO
-=========================== */
 
-.hero{
+section{
 
     padding:100px 0;
-}
 
-.hero h1{
-
-    font-family:'Poppins',sans-serif;
-    font-size:60px;
-    font-weight:800;
-    line-height:1.2;
-}
-
-.hero span{
-
-    color:#0A4D9F;
-}
-
-.hero p{
-
-    font-size:20px;
-    margin:30px 0;
-    color:#555;
-}
-
-.btn-primary{
-
-    background:#0A4D9F;
-    border:none;
-    padding:14px 35px;
-    border-radius:50px;
-}
-
-.btn-primary:hover{
-
-    background:#083d7d;
 }
