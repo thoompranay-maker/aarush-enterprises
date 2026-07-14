@@ -1,1 +1,28 @@
+@media(max-width:992px){
 
+.hero{
+
+text-align:center;
+padding:60px 0;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero img{
+
+margin-top:40px;
+
+}
+
+.nav-link{
+
+margin-left:0;
+
+}
+
+}
