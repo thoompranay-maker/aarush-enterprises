@@ -1,28 +1,11 @@
+/* Tablet */
+
 @media(max-width:992px){
 
-.hero{
-
-text-align:center;
-padding:60px 0;
-
 }
 
-.hero h1{
+/* Mobile */
 
-font-size:42px;
-
-}
-
-.hero img{
-
-margin-top:40px;
-
-}
-
-.nav-link{
-
-margin-left:0;
-
-}
+@media(max-width:768px){
 
 }
