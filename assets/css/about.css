@@ -1,1 +1,89 @@
+/*======================================
+        WHY CHOOSE US
+======================================*/
 
+.why-us{
+
+    background:#f7fbff;
+
+    padding:120px 0;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    border:1px solid #eef2f7;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(10,77,159,.12);
+
+}
+
+.why-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    background:#eef6ff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.why-icon i{
+
+    font-size:30px;
+
+    color:var(--primary);
+
+}
+
+.why-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.why-card p{
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+}
