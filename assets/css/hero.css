@@ -84,3 +84,63 @@
     margin-top:40px;
 
 }
+
+/*======================================
+        SERVICE GRID
+======================================*/
+
+.service-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+
+}
+
+.service-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 45px rgba(10,77,159,.18);
+
+}
+
+.service-card i{
+
+    font-size:40px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.service-card h5{
+
+    margin:0;
+
+    font-weight:600;
+
+}
