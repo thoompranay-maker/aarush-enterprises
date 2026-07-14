@@ -82,3 +82,48 @@ section{
     padding:100px 0;
 
 }
+
+/* ====================================
+   NAVBAR
+==================================== */
+
+.custom-navbar{
+
+    background:#ffffff;
+    padding:18px 0;
+    box-shadow:0 4px 20px rgba(0,0,0,.05);
+
+}
+
+.logo{
+
+    width:55px;
+    height:55px;
+    object-fit:contain;
+
+}
+
+.brand-name{
+
+    margin-left:12px;
+    font-size:24px;
+    font-weight:700;
+    color:var(--primary);
+
+}
+
+.navbar-nav .nav-link{
+
+    margin-left:25px;
+    font-weight:600;
+    color:var(--dark);
+
+    transition:.3s;
+
+}
+
+.navbar-nav .nav-link:hover{
+
+    color:var(--primary);
+
+}
