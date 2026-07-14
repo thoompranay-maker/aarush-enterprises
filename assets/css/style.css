@@ -127,3 +127,13 @@ section{
     color:var(--primary);
 
 }
+
+.btn{
+
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
