@@ -29,7 +29,7 @@ if (topBtn) {
 /*==============================
     Scroll Reveal Start
 ==============================*/
-
+/* VOID
 const reveals = document.querySelectorAll(
 '.reveal,.reveal-left,.reveal-right'
 );
@@ -59,6 +59,8 @@ threshold:0.15
 );
 
 reveals.forEach(el=>observer.observe(el));
+
+ */
 
 /*==============================
     Scroll Reveal End
