@@ -131,3 +131,29 @@
 }
 
 }
+
+/*======================================
+        SHOWCASE
+======================================*/
+
+@media(max-width:768px){
+
+.showcase{
+
+    padding:80px 0;
+
+}
+
+.featured-image{
+
+    margin:40px auto;
+
+}
+
+.showcase-card img{
+
+    height:200px;
+
+}
+
+}
