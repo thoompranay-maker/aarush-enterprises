@@ -1,1 +1,119 @@
+/*======================================
+        BUSINESS SHOWCASE
+======================================*/
 
+.showcase{
+
+    background:#f8fbff;
+
+    padding:120px 0;
+
+}
+
+/* Featured Image */
+
+.featured-image{
+
+    margin:60px auto;
+
+    text-align:center;
+
+}
+
+.featured-image img{
+
+    width:100%;
+
+    max-width:1000px;
+
+    border-radius:24px;
+
+    display:block;
+
+    margin:auto;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+    transition:.4s ease;
+
+}
+
+.featured-image img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* Showcase Grid */
+
+.showcase-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+/* Cards */
+
+.showcase-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+    cursor:pointer;
+
+}
+
+.showcase-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(10,77,159,.15);
+
+}
+
+/* Images */
+
+.showcase-card img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    transition:.4s ease;
+
+}
+
+.showcase-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* Title */
+
+.showcase-card h3{
+
+    padding:22px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    color:var(--dark);
+
+}
