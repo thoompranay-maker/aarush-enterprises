@@ -1,2 +1,49 @@
+/*=====================================
+      SCROLL REVEAL ANIMATIONS
+=====================================*/
 
-/* Animation Styles will be added later */
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal.active,
+.reveal-left.active,
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translate(0,0);
+
+}
