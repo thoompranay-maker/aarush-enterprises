@@ -30,17 +30,30 @@
 
     text-align:center;
 
-    transition:.35s;
+    transition:all .35s ease;
 
     border:1px solid #eef2f7;
 
 }
 
+
 .why-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-12px);
 
-    box-shadow:0 20px 40px rgba(10,77,159,.12);
+    box-shadow:0 30px 60px rgba(10,77,159,.18);
+
+}
+
+.why-card:hover .why-icon{
+
+    background:var(--primary);
+
+}
+
+.why-card:hover .why-icon i{
+
+    color:#fff;
 
 }
 
