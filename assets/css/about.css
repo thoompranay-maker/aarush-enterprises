@@ -1,31 +1,22 @@
-
 /*======================================
             ABOUT
 ======================================*/
 
 .about{
 
-    padding:120px 0;
-
     background:#ffffff;
 
-}
-
-.about-grid{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:80px;
-
-    align-items:center;
+    padding:120px 0;
 
 }
 
 .about-image{
 
-    position:relative;
+    width:100%;
+
+    margin:50px auto;
+
+    text-align:center;
 
 }
 
@@ -33,58 +24,44 @@
 
     width:100%;
 
-    border-radius:25px;
+    max-width:900px;
+
+    border-radius:24px;
+
+    display:block;
+
+    margin:auto;
 
     box-shadow:0 25px 60px rgba(0,0,0,.12);
 
+    transition:.4s;
+
 }
 
-.about-content h2{
+.about-image img:hover{
 
-    font-size:3rem;
+    transform:scale(1.02);
 
-    margin:20px 0;
+}
 
-    color:var(--dark);
+.about-content{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
 
 }
 
 .about-content p{
 
-    color:var(--gray);
+    font-size:18px;
 
     line-height:1.9;
 
-    margin-bottom:35px;
+    color:var(--gray);
 
-}
-
-.about-features{
-
-    display:grid;
-
-    gap:18px;
-
-    margin-bottom:40px;
-
-}
-
-.about-features div{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-    font-weight:600;
-
-}
-
-.about-features i{
-
-    color:var(--primary);
-
-    font-size:20px;
+    margin-bottom:45px;
 
 }
