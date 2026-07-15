@@ -80,15 +80,27 @@
 
     border:1px solid #eef2f7;
 
-    transition:.35s;
+    transition:all .35s ease;
 
 }
 
 .service-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
-    box-shadow:0 20px 45px rgba(10,77,159,.12);
+    box-shadow:0 30px 60px rgba(10,77,159,.18);
+
+}
+
+.service-card:hover .service-icon{
+
+    background:var(--primary);
+           
+}
+
+.service-card:hover .service-icon i{
+
+    color:#fff;
 
 }
 
