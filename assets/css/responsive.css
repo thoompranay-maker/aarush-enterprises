@@ -97,3 +97,37 @@
 }
 
 }
+
+/*======================================
+            ABOUT
+======================================*/
+
+@media(max-width:768px){
+
+.about{
+
+    padding:80px 0;
+
+}
+
+.about-content p{
+
+    font-size:16px;
+
+}
+
+.feature-pills{
+
+    gap:12px;
+
+}
+
+.feature-pills span{
+
+    padding:12px 18px;
+
+    font-size:14px;
+
+}
+
+}
