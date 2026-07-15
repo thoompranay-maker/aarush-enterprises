@@ -65,3 +65,49 @@
     margin-bottom:45px;
 
 }
+
+/*======================================
+        FEATURE PILLS
+======================================*/
+
+.feature-pills{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-bottom:45px;
+
+}
+
+.feature-pills span{
+
+    background:#eef6ff;
+
+    color:var(--primary);
+
+    padding:14px 24px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+.feature-pills span:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    transform:translateY(-4px);
+
+}
