@@ -1,29 +1,33 @@
 
 // Aarush Enterprises JavaScript
 
-const backToTop = document.getElementById("backToTop");
+document.addEventListener("DOMContentLoaded", () => {
 
-window.addEventListener("scroll", () => {
+    const backToTop = document.getElementById("backToTop");
 
-    if(window.scrollY > 500){
+    window.addEventListener("scroll", () => {
 
-        backToTop.classList.add("show");
+        if (window.scrollY > 500) {
 
-    }else{
+            backToTop.classList.add("show");
 
-        backToTop.classList.remove("show");
+        } else {
 
-    }
+            backToTop.classList.remove("show");
 
-});
+        }
 
-backToTop.addEventListener("click", () => {
+    });
 
-    window.scrollTo({
+    backToTop.addEventListener("click", () => {
 
-        top:0,
+        window.scrollTo({
 
-        behavior:"smooth"
+            top: 0,
+
+            behavior: "smooth"
+
+        });
 
     });
 
