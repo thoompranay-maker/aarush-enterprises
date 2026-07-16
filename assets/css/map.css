@@ -1,0 +1,97 @@
+/*==================================
+            MAP SECTION
+==================================*/
+
+.map-section{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.map-wrapper{
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    margin-top:60px;
+
+}
+
+.map-wrapper iframe{
+
+    width:100%;
+
+    height:450px;
+
+    border:none;
+
+    display:block;
+
+}
+
+.map-info{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+.location-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.location-box i{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#edf4ff;
+
+    color:#1f57d6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+.location-box h4{
+
+    margin-bottom:8px;
+
+}
+
+.location-box p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
