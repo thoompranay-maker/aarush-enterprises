@@ -153,52 +153,6 @@
 
 }
 
-/*==============================
-        Floating Icons
-==============================*/
-
-.floating-icon{
-    position:absolute;
-
-    width:70px;
-    height:70px;
-
-    background:#fff;
-
-    border-radius:50%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-
-    font-size:28px;
-
-    color:#2563eb;
-
-    z-index:2;
-
-    animation:floatIcon 5s ease-in-out infinite;
-}
-
-/*==============================
-        Floating Animations
-==============================*/
-
-@keyframes floatIcon{
-
-    0%,100%{
-
-        transform:translateY(0px);
-    }
-
-    50%{
-
-        transform:translateY(-18px);
-    }
-
-}
 
 /*==============================
        Position each icon
