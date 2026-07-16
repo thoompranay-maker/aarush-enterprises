@@ -1,1 +1,30 @@
 
+/*=============================
+          FOOTER
+=============================*/
+
+@media(max-width:991px){
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+text-align:center;
+
+}
+
+.footer-logo{
+
+margin:auto;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+}
