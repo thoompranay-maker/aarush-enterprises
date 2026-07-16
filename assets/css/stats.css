@@ -6,7 +6,7 @@
 
     background:var(--primary);
 
-    padding:120px 0;
+    padding:140px 0;
 
 }
 
@@ -33,13 +33,17 @@
 
     gap:30px;
 
+    margin-top:70px;
+
 }
 
 .stat-card{
 
-    background:#ffffff;
+    background:rgba(255,255,255,.97);
 
-    border-radius:20px;
+    backdrop-filter:blur(8px);
+
+    border-radius:28px;
 
     padding:40px;
 
@@ -51,19 +55,20 @@
 
 .stat-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-18px);
 
-    box-shadow:0 25px 60px rgba(0,0,0,.25);
+    box-shadow:
+    0 30px 70px rgba(0,0,0,.25);
 
 }
 
 .stat-card i{
 
-    font-size:38px;
+    font-size:44px;
 
     color:var(--secondary);
 
-    margin-bottom:20px;
+    margin-bottom:28px;
 
 }
 
