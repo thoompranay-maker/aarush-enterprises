@@ -153,4 +153,51 @@
 
 }
 
+/* ORBIT */
+
+.hero-orbit{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 700px;
+    height: 420px;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+}
+
+.orbit{
+    position:absolute;
+    inset:0;
+}
+
+.orbit-item{
+    position:absolute;
+
+    width:64px;
+    height:64px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    color:#2f5cff;
+
+    font-size:24px;
+
+    left:50%;
+    top:50%;
+
+    margin-left:-32px;
+    margin-top:-32px;
+}
 
