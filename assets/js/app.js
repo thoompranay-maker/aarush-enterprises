@@ -1,30 +1,33 @@
 
 // Aarush Enterprises JavaScript
 
-const topBtn = document.getElementById("topBtn");
+const backToTop = document.getElementById("backToTop");
 
-if (topBtn) {
+window.addEventListener("scroll", () => {
 
-    window.addEventListener("scroll", () => {
+    if(window.scrollY > 500){
 
-        if (window.scrollY > 500) {
-            topBtn.style.display = "block";
-        } else {
-            topBtn.style.display = "none";
-        }
+        backToTop.classList.add("show");
+
+    }else{
+
+        backToTop.classList.remove("show");
+
+    }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
 
     });
 
-    topBtn.addEventListener("click", () => {
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    });
-
-}
+});
 
 /*==============================
     Scroll Reveal Start
