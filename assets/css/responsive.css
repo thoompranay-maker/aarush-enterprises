@@ -219,3 +219,25 @@ flex-wrap:wrap;
 }
 
 }
+
+/*=============================
+         GOOGLE MAPS
+=============================*/
+
+@media(max-width:768px){
+
+    .map-wrapper iframe{
+
+        height:320px;
+
+    }
+
+    .map-info{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}
