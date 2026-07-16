@@ -159,3 +159,60 @@ ${message}`;
     });
 
 }
+
+/*=========================================
+        HERO ORBIT ANIMATION START
+=========================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const orbitItems = document.querySelectorAll(".orbit-item");
+
+    if (!orbitItems.length) return;
+
+    const desktop = window.innerWidth > 768;
+
+    const radiusX = desktop ? 360 : 150;
+    const radiusY = desktop ? 180 : 150;
+
+    const icons = [];
+
+    orbitItems.forEach((item, index) => {
+
+        icons.push({
+
+            element: item,
+
+            angle: (Math.PI * 2 / orbitItems.length) * index,
+
+            speed: parseFloat(item.dataset.speed)
+
+        });
+
+    });
+
+    function animate() {
+
+        icons.forEach(icon => {
+
+            icon.angle += icon.speed * 0.002;
+
+            const x = Math.cos(icon.angle) * radiusX;
+
+            const y = Math.sin(icon.angle) * radiusY;
+
+            icon.element.style.transform =
+                `translate(${x}px, ${y}px)`;
+
+        });
+
+        requestAnimationFrame(animate);
+
+    }
+
+    animate();
+
+});
+/*=========================================
+        HERO ORBIT ANIMATION END
+=========================================*/
