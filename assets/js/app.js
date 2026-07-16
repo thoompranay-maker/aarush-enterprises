@@ -100,7 +100,10 @@ if (contactForm) {
         const whatsappNumber = "919490434649"; // Replace if needed
 
         const text =
-`*New Customer Enquiry*
+
+`🏢 *AARUSH ENTERPRISES*
+
+📩 *New Customer Enquiry*
 
 👤 *Name:* ${name}
 
