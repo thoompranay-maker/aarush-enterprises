@@ -6,7 +6,7 @@
 
     position: relative;
             
-    min-height:82vh;
+    min-height:90vh;
 
     padding-top:140px;
 
@@ -39,7 +39,7 @@
             
     overflow: hidden;
             
-    z-index:2;
+    z-index:5;
 
 }
 
@@ -167,6 +167,8 @@
     transform: translate(-50%, -50%);
 
     pointer-events: none;
+
+    z-index:1;
 }
 
 .orbit{
@@ -200,4 +202,20 @@
     margin-left:-32px;
     margin-top:-32px;
 }
+
+.outer-orbit .orbit-item{
+    width:64px;
+    height:64px;
+    font-size:24px;
+}
+
+.inner-orbit .orbit-item{
+    width:52px;
+    height:52px;
+    font-size:20px;
+
+    margin-left:-26px;
+    margin-top:-26px;
+}
+
 
