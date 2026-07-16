@@ -170,13 +170,13 @@ section{
 
     z-index:999;
 
-    transition:.3s;
+    transition: all .3s ease;
 
 }
 
 .whatsapp-btn:hover{
 
-    transform:scale(1.08);
+    transform: translateY(-5px) scale(1.05);
 
     color:#fff;
 
@@ -189,7 +189,7 @@ section{
 .back-to-top{
     position:fixed;
     right:25px;
-    bottom:25px;
+    bottom:95px;
 
     width:55px;
     height:55px;
@@ -211,7 +211,7 @@ section{
     opacity:0;
     visibility:hidden;
 
-    transition:.3s;
+    transition: all .3s ease;
     z-index:999;
 }
 
@@ -221,7 +221,7 @@ section{
 }
 
 .back-to-top:hover{
-    transform:translateY(-5px);
+    transform: translateY(-5px) scale(1.05);
     background:#2563eb;
 }
 
