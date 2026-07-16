@@ -161,58 +161,68 @@ ${message}`;
 }
 
 /*=========================================
-        HERO ORBIT ANIMATION START
+        PREMIUM HERO ORBIT START
 =========================================*/
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const orbitItems = document.querySelectorAll(".orbit-item");
+    function createOrbit(selector, radiusX, radiusY, direction = 1) {
 
-    if (!orbitItems.length) return;
+        const orbit = document.querySelector(selector);
 
-    const desktop = window.innerWidth > 768;
+        if (!orbit) return;
 
-    const radiusX = desktop ? 360 : 150;
-    const radiusY = desktop ? 180 : 150;
+        const items = orbit.querySelectorAll(".orbit-item");
 
-    const icons = [];
+        const icons = [];
 
-    orbitItems.forEach((item, index) => {
+        items.forEach((item, index) => {
 
-        icons.push({
+            icons.push({
 
-            element: item,
+                element: item,
 
-            angle: (Math.PI * 2 / orbitItems.length) * index,
+                angle: (Math.PI * 2 / items.length) * index,
 
-            speed: parseFloat(item.dataset.speed)
+                speed: parseFloat(item.dataset.speed) * direction
 
-        });
-
-    });
-
-    function animate() {
-
-        icons.forEach(icon => {
-
-            icon.angle += icon.speed * 0.002;
-
-            const x = Math.cos(icon.angle) * radiusX;
-
-            const y = Math.sin(icon.angle) * radiusY;
-
-            icon.element.style.transform =
-                `translate(${x}px, ${y}px)`;
+            });
 
         });
 
-        requestAnimationFrame(animate);
+        function animate() {
+
+            const mobile = window.innerWidth <= 768;
+
+            const rx = mobile ? 150 : radiusX;
+            const ry = mobile ? 150 : radiusY;
+
+            icons.forEach(icon => {
+
+                icon.angle += icon.speed * 0.002;
+
+                const x = Math.cos(icon.angle) * rx;
+                const y = Math.sin(icon.angle) * ry;
+
+                icon.element.style.transform =
+                    `translate(${x}px, ${y}px)`;
+
+            });
+
+            requestAnimationFrame(animate);
+
+        }
+
+        animate();
 
     }
 
-    animate();
+    createOrbit(".outer-orbit", 430, 240, 1);
+
+    createOrbit(".inner-orbit", 300, 150, -1);
 
 });
+
 /*=========================================
-        HERO ORBIT ANIMATION END
+        PREMIUM HERO ORBIT END
 =========================================*/
