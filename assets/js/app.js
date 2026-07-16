@@ -93,9 +93,39 @@ if (contactForm) {
 
         const phone = document.getElementById("phone").value.trim();
 
-        const service = document.getElementById("service").value.trim();
+        const service = document.getElementById("service").value;
 
         const message = document.getElementById("message").value.trim();
+
+            // <-- ADD VALIDATION HERE
+
+        if(name === ""){
+
+    alert("Please enter your name.");
+
+    return;
+}
+
+if(phone.length !== 10){
+
+    alert("Please enter a valid 10-digit mobile number.");
+
+    return;
+}
+
+if(service === ""){
+
+    alert("Please select a service.");
+
+    return;
+}
+
+if(message === ""){
+
+    alert("Please enter your message.");
+
+    return;
+}
 
         const whatsappNumber = "919490434649"; // Replace if needed
 
