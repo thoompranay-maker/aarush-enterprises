@@ -164,3 +164,41 @@
 
     color:#cfd6ea;
 }
+
+.footer-bottom-content{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.footer-bottom-links{
+
+display:flex;
+
+gap:25px;
+
+}
+
+.footer-bottom-links a{
+
+color:#cfd6ea;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-bottom-links a:hover{
+
+color:white;
+
+}
