@@ -202,4 +202,20 @@ justify-content:center;
 
 }
 
+    .footer-bottom-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.footer-bottom-links{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
 }
