@@ -77,4 +77,45 @@ AOS.init({
 
 -------- */
 
+/*=========================================
+        WHATSAPP CONTACT FORM
+=========================================*/
 
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+
+        const phone = document.getElementById("phone").value.trim();
+
+        const service = document.getElementById("service").value.trim();
+
+        const message = document.getElementById("message").value.trim();
+
+        const whatsappNumber = "919490434649"; // Replace if needed
+
+        const text =
+`*New Customer Enquiry*
+
+👤 *Name:* ${name}
+
+📞 *Phone:* ${phone}
+
+🛠 *Service:* ${service}
+
+💬 *Message:*
+${message}`;
+
+        const url =
+`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+        window.open(url, "_blank");
+
+    });
+
+}
