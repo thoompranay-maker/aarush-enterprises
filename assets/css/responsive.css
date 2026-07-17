@@ -43,6 +43,14 @@
 
 }
 
+    .hero-buttons .btn{
+
+    width:100%;
+
+    max-width:280px;
+
+}
+
     .outer-orbit .orbit-item{
 
     width:46px;
