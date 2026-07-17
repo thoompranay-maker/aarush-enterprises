@@ -226,3 +226,8 @@ section{
 }
 
 /* Top Button */
+
+html,
+body{
+    overflow-x:hidden;
+}
