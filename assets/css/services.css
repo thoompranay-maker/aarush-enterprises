@@ -4,9 +4,19 @@
 
 .services{
 
-    background:#ffffff;
+    margin-top:-40px;
 
-    padding:120px 0;
+    padding-top:120px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f9fbff 100%
+    );
 
 }
 
@@ -77,6 +87,14 @@
     margin:auto;
 
     line-height:1.8;
+
+}
+
+.services .container{
+
+    position:relative;
+
+    z-index:2;
 
 }
 
@@ -318,4 +336,72 @@
 
 /*=========================================
         SERVICE LIST END
+=========================================*/
+
+/*=========================================
+        SERVICES BACKGROUND
+=========================================*/
+
+.services-bg{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.services-bg .blob{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(10,77,159,.05);
+
+    filter:blur(40px);
+
+}
+
+.services-bg .one{
+
+    width:280px;
+
+    height:280px;
+
+    top:-80px;
+
+    left:-100px;
+
+}
+
+.services-bg .two{
+
+    width:220px;
+
+    height:220px;
+
+    right:-80px;
+
+    top:220px;
+
+}
+
+.services-bg .three{
+
+    width:260px;
+
+    height:260px;
+
+    bottom:-100px;
+
+    left:40%;
+
+}
+
+/*=========================================
+        SERVICES BACKGROUND END
 =========================================*/
