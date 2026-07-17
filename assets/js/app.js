@@ -276,3 +276,54 @@ document.addEventListener("DOMContentLoaded", () => {
 /*=========================================
         NAVBAR SCROLL EFFECT END
 =========================================*/
+
+/*=========================================
+        ACTIVE NAVIGATION START
+=========================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    function updateActiveLink() {
+
+        let current = "";
+
+        sections.forEach(section => {
+
+            const sectionTop = section.offsetTop - 120;
+            const sectionHeight = section.offsetHeight;
+
+            if (
+                window.scrollY >= sectionTop &&
+                window.scrollY < sectionTop + sectionHeight
+            ) {
+                current = section.getAttribute("id");
+            }
+
+        });
+
+        navLinks.forEach(link => {
+
+            link.classList.remove("active");
+
+            const href = link.getAttribute("href");
+
+            if (href === `#${current}`) {
+                link.classList.add("active");
+            }
+
+        });
+
+    }
+
+    updateActiveLink();
+
+    window.addEventListener("scroll", updateActiveLink);
+
+});
+
+/*=========================================
+        ACTIVE NAVIGATION END
+=========================================*/
