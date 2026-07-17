@@ -413,3 +413,97 @@ document.addEventListener("DOMContentLoaded", () => {
 /*=========================================
         PREMIUM MOBILE MENU END
 =========================================*/
+
+/*=========================================
+        STORE STATUS START
+=========================================*/
+
+function updateStoreStatus() {
+
+    const status = document.getElementById("storeStatus");
+    const message = document.getElementById("storeMessage");
+    const indicator = document.querySelector(".status-indicator");
+
+    const now = new Date();
+
+    const day = now.getDay();      // 0 = Sunday
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+
+    const currentTime = hour * 60 + minute;
+
+    let openTime;
+    let closeTime;
+
+    if (day === 0) {
+
+        // Sunday
+        openTime = 9 * 60;
+        closeTime = 20 * 60;
+
+    } else {
+
+        // Monday to Saturday
+        openTime = 8 * 60;
+        closeTime = 21 * 60;
+
+    }
+
+    const isOpen =
+        currentTime >= openTime &&
+        currentTime < closeTime;
+
+    if (isOpen) {
+
+        status.textContent = "🟢 We're Open Now";
+
+        message.textContent =
+            "Closes today at " +
+            (day === 0 ? "8:00 PM" : "9:00 PM");
+
+        indicator.style.background = "#22c55e";
+
+    } else {
+
+        status.textContent = "🔴 We're Currently Closed";
+
+        indicator.style.background = "#ef4444";
+
+        if (currentTime < openTime) {
+
+            message.textContent =
+                "Opens today at " +
+                (day === 0 ? "9:00 AM" : "8:00 AM");
+
+        } else {
+
+            if (day === 6) {
+
+                message.textContent =
+                    "Opens Sunday at 9:00 AM";
+
+            }
+
+            else if (day === 0) {
+
+                message.textContent =
+                    "Opens Monday at 8:00 AM";
+
+            }
+
+            else {
+
+                message.textContent =
+                    "Opens tomorrow at 8:00 AM";
+
+            }
+
+        }
+
+    }
+
+}
+
+updateStoreStatus();
+
+setInterval(updateStoreStatus, 60000);
