@@ -538,6 +538,8 @@ const loader = setInterval(() => {
 
         setTimeout(() => {
 
+                const pageContent = document.getElementById("pageContent");
+
             preloader.classList.add("hide");
 
             document.body.classList.remove("loading");
