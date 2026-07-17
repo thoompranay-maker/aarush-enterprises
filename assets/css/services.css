@@ -120,11 +120,7 @@
             
     transform:scale(1.08);
 
-.service-card:hover .service-icon::before{
 
-    opacity:1;
-
-}
            
 }
 
@@ -190,7 +186,7 @@
 
         );
 
-    opacity:0;
+    opacity:.7;
 
     transition:.35s ease;
 
