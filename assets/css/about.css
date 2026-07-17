@@ -14,13 +14,23 @@
 
     width:100%;
 
+    position:relative;
+
     margin:50px auto;
 
     text-align:center;
 
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.6));
 
-    transition:.35s ease;
+    transition:.4s ease;
+
+    overflow:visible;
+
+}
+
+.about-image:hover{
+
+    transform:translateY(-8px);
 
 }
 
@@ -32,11 +42,17 @@
 
     border-radius:24px;
 
+    border:8px solid #fff;
+
     display:block;
 
     margin:auto;
 
-    box-shadow:0 25px 60px rgba(0,0,0,.12);
+    box-shadow:
+
+        0 30px 60px rgba(0,0,0,.12),
+
+        0 10px 25px rgba(10,77,159,.12);
 
     transition:.4s;
 
@@ -67,6 +83,26 @@
     color:var(--gray);
 
     margin-bottom:45px;
+
+}
+
+.image-accent{
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:24px;
+
+    background:rgba(10,77,159,.08);
+
+    bottom:-20px;
+
+    right:-20px;
+
+    z-index:-1;
 
 }
 
