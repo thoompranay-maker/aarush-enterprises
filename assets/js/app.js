@@ -201,13 +201,13 @@ if (mobile) {
 
     if (selector === ".outer-orbit") {
 
-        rx = 180;
-        ry = 110;
+        rx = 200;
+        ry = 125;
 
     } else {
 
-        rx = 110;
-        ry = 70;
+        rx = 130;
+        ry = 85;
 
     }
 
