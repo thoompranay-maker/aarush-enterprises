@@ -28,6 +28,7 @@
 .hero-title{
 
     font-size:2.5rem;
+    
     line-height:1.05;
 
 }
@@ -35,6 +36,12 @@
 .hero-subtitle{
 
     font-size:1rem;
+    
+    max-width:320px;
+    
+    margin-left:auto;
+    
+    margin-right:auto;
 
 }
 
