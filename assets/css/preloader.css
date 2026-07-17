@@ -126,3 +126,9 @@
     visibility:hidden;
 
 }
+
+body.loading{
+
+    overflow:hidden;
+
+}
