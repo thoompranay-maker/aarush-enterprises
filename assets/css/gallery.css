@@ -28,6 +28,8 @@
 
     overflow:hidden;
 
+        position: relative;
+
             box-shadow:
         0 25px 60px rgba(0,0,0,.12),
         0 10px 25px rgba(10,77,159,.10);
@@ -61,6 +63,46 @@
 .featured-image img:hover{
 
     transform:scale(1.02);
+
+}
+
+.featured-badge{
+
+    position:absolute;
+
+    top:22px;
+
+    left:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 18px;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    z-index:2;
+
+}
+
+.featured-badge i{
+
+    font-size:15px;
 
 }
 
