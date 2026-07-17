@@ -12,6 +12,13 @@
 
 @media (max-width:768px){
 
+    .hero-orbit{
+
+    width:300px;
+    height:300px;
+
+    }
+
 .hero{
 
     padding:120px 20px 80px;
