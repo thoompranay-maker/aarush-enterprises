@@ -69,6 +69,20 @@
 
 }
 
+    .hero-highlights{
+
+    align-items:flex-start;
+
+    margin:25px 0;
+
+}
+
+.hero-highlights div{
+
+    font-size:15px;
+
+}
+
 }
 
 @media (max-width:768px){
