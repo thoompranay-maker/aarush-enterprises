@@ -130,7 +130,8 @@
 
     overflow:hidden;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.08);
 
     transition:.35s ease;
 
@@ -140,9 +141,10 @@
 
 .showcase-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 
-    box-shadow:0 30px 60px rgba(10,77,159,.15);
+    box-shadow:
+        0 28px 55px rgba(0,0,0,.16);
 
 }
 
@@ -152,11 +154,11 @@
 
     width:100%;
 
-    height:180px;
+    height:220px;
 
     object-fit:cover;
 
-    transition:.4s ease;
+    transition:.45s ease;
 
 }
 
@@ -170,12 +172,28 @@
 
 .showcase-card h3{
 
-    padding:22px;
-
-    text-align:center;
+    margin:0;
 
     font-size:20px;
 
+    font-weight:600;
+
     color:var(--dark);
+
+    transition:.3s;
+
+}
+
+.showcase-card:hover h3{
+
+    color:var(--primary);
+
+}
+
+.showcase-content{
+
+    padding:24px;
+
+    text-align:center;
 
 }
