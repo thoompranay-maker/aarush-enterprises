@@ -201,6 +201,11 @@
 
     margin-left:-32px;
     margin-top:-32px;
+
+    transition:
+    transform 0.08s linear,
+    opacity 0.35s ease,
+    scale 0.35s ease;
 }
 
 .outer-orbit .orbit-item{
