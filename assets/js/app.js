@@ -194,8 +194,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const mobile = window.innerWidth <= 768;
 
-            const rx = mobile ? 150 : radiusX;
-            const ry = mobile ? 150 : radiusY;
+            let rx = radiusX;
+let ry = radiusY;
+
+if (mobile) {
+
+    if (selector === ".outer-orbit") {
+
+        rx = 180;
+        ry = 110;
+
+    } else {
+
+        rx = 110;
+        ry = 70;
+
+    }
+
+            }
 
             icons.forEach(icon => {
 
