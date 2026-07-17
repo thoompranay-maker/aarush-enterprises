@@ -133,6 +133,8 @@
 
     cursor:default;
 
+    box-shadow:0 8px 20px rgba(10,77,159,.08);
+
 }
 
 .feature-pills span:hover{
@@ -141,6 +143,8 @@
 
     color:#ffffff;
 
-    transform:translateY(-4px);
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(10,77,159,.15);
 
 }
