@@ -219,3 +219,22 @@
 }
 
 
+/* =====================================
+        TEMP DEBUG
+===================================== */
+
+@media (max-width: 768px){
+
+    .hero{
+        outline: 2px solid red;
+    }
+
+    .hero-orbit{
+        outline: 2px solid blue;
+    }
+
+    .container{
+        outline: 2px solid green;
+    }
+
+}
