@@ -357,3 +357,59 @@ document.addEventListener("DOMContentLoaded", () => {
 /*=========================================
         PREMIUM HAMBURGER END
 =========================================*/
+
+/*=========================================
+        PREMIUM MOBILE MENU START
+=========================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const navbar = document.querySelector("#mainMenu");
+    const toggler = document.querySelector(".navbar-toggler");
+    const navLinks = document.querySelectorAll("#mainMenu .nav-link");
+
+    if (!navbar || !toggler) return;
+
+    const mobileMenu = new bootstrap.Collapse(navbar, {
+        toggle: false
+    });
+
+    /*--------------------------
+        Auto Close
+    ---------------------------*/
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            if (window.innerWidth < 992 && navbar.classList.contains("show")) {
+
+                mobileMenu.hide();
+
+            }
+
+        });
+
+    });
+
+    /*--------------------------
+        Lock Background Scroll
+    ---------------------------*/
+
+    navbar.addEventListener("shown.bs.collapse", () => {
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+    navbar.addEventListener("hidden.bs.collapse", () => {
+
+        document.body.style.overflow = "";
+
+    });
+
+});
+
+/*=========================================
+        PREMIUM MOBILE MENU END
+=========================================*/
