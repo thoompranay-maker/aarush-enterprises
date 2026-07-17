@@ -507,3 +507,23 @@ function updateStoreStatus() {
 updateStoreStatus();
 
 setInterval(updateStoreStatus, 60000);
+
+/* ==========================================
+            PRELOADER
+========================================== */
+
+window.addEventListener("load", () => {
+
+    const preloader = document.getElementById("preloader");
+
+    setTimeout(() => {
+
+        preloader.classList.add("hide");
+
+    }, 1500);
+
+});
+
+/* ==========================================
+            PRELOADER END
+========================================== */
