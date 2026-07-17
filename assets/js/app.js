@@ -327,3 +327,33 @@ document.addEventListener("DOMContentLoaded", () => {
 /*=========================================
         ACTIVE NAVIGATION END
 =========================================*/
+
+/*=========================================
+        PREMIUM HAMBURGER START
+=========================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const toggler = document.querySelector(".navbar-toggler");
+
+    const menu = document.querySelector("#mainMenu");
+
+    if (!toggler || !menu) return;
+
+    menu.addEventListener("shown.bs.collapse", () => {
+
+        toggler.classList.add("active");
+
+    });
+
+    menu.addEventListener("hidden.bs.collapse", () => {
+
+        toggler.classList.remove("active");
+
+    });
+
+});
+
+/*=========================================
+        PREMIUM HAMBURGER END
+=========================================*/
