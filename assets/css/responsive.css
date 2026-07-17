@@ -43,6 +43,28 @@
 
 }
 
+    .outer-orbit .orbit-item{
+
+    width:46px;
+    height:46px;
+    font-size:18px;
+
+    margin-left:-23px;
+    margin-top:-23px;
+
+}
+
+.inner-orbit .orbit-item{
+
+    width:38px;
+    height:38px;
+    font-size:15px;
+
+    margin-left:-19px;
+    margin-top:-19px;
+
+}
+
 }
 
 @media (max-width:768px){
