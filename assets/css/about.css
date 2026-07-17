@@ -89,25 +89,6 @@
 
 }
 
-.image-accent{
-
-    position:absolute;
-
-    width:120px;
-
-    height:120px;
-
-    border-radius:24px;
-
-    background:rgba(10,77,159,.08);
-
-    bottom:-20px;
-
-    right:-20px;
-
-    z-index:1;
-
-}
 
 /*======================================
         FEATURE PILLS
