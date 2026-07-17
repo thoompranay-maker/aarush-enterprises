@@ -109,6 +109,26 @@
 
 }
 
+    .hero-trust{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-top:35px;
+
+}
+
+.trust-card{
+
+    width:100%;
+
+    max-width:320px;
+
+    justify-content:center;
+
+}
+
 }
 
 @media (max-width:768px){
