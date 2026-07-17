@@ -46,6 +46,28 @@
 
 }
 
+.section-heading h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:4px;
+
+    margin:18px auto 0;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #5fa8ff
+    );
+
+}
+
 .section-heading p{
 
     color:var(--gray);
