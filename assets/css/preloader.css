@@ -1,0 +1,128 @@
+/* ==========================
+        PRELOADER
+========================== */
+
+#preloader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .6s ease,
+               visibility .6s ease;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+    width:320px;
+
+}
+
+.loader-logo{
+
+    width:90px;
+
+    margin-bottom:22px;
+
+}
+
+.loader-content h1{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    color:#1d2940;
+
+}
+
+.loader-content p{
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+}
+
+.loader-bar{
+
+    width:100%;
+
+    height:8px;
+
+    background:#edf2f7;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    margin-bottom:18px;
+
+}
+
+.loader-bar span{
+
+    display:block;
+
+    width:0;
+
+    height:100%;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #38bdf8
+    );
+
+    animation:loadingBar 1.8s ease forwards;
+
+}
+
+.loader-content small{
+
+    color:#94a3b8;
+
+    letter-spacing:1px;
+
+}
+
+@keyframes loadingBar{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+#preloader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
