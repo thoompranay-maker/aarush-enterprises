@@ -16,7 +16,7 @@
 
     position:relative;
 
-    margin:50px auto;
+    margin:70px auto;
 
     text-align:center;
 
@@ -69,7 +69,7 @@
 
 .about-content{
 
-    max-width:850px;
+    max-width:760px;
 
     margin:auto;
 
@@ -81,14 +81,23 @@
 
     font-size:18px;
 
-    line-height:1.9;
+    line-height:2;
 
-    color:var(--gray);
+    color:#5d6470;
 
     margin-bottom:45px;
 
 }
 
+.about .btn{
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
 
 /*======================================
         FEATURE PILLS
