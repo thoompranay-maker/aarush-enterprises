@@ -89,9 +89,40 @@ section{
 
 .custom-navbar{
 
-    background:#ffffff;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
     padding:18px 0;
-    box-shadow:0 4px 20px rgba(0,0,0,.05);
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+    transition:
+        padding .35s ease,
+        background .35s ease,
+        box-shadow .35s ease,
+        backdrop-filter .35s ease;
+
+    z-index:1000;
+
+}
+
+.custom-navbar.scrolled{
+
+    padding:12px 0;
+
+    background:rgba(255,255,255,.92);
+
+    box-shadow:
+        0 15px 35px rgba(15,23,42,.10);
 
 }
 
