@@ -509,28 +509,54 @@ updateStoreStatus();
 setInterval(updateStoreStatus, 60000);
 
 /* ==========================================
-            PRELOADER
+            SMART PRELOADER
 ========================================== */
 
 document.body.classList.add("loading");
 
-window.addEventListener("load", () => {
+const preloader = document.getElementById("preloader");
+const progressBar = document.querySelector(".loader-bar span");
 
-    const preloader = document.getElementById("preloader");
+let progress = 0;
+let pageLoaded = false;
 
-    setTimeout(() => {
+const loader = setInterval(() => {
 
-        preloader.classList.add("hide");
+    if (progress < 85) {
 
-        document.body.classList.remove("loading");
+        progress += Math.random() * 8;
+
+    }
+
+    progressBar.style.width = progress + "%";
+
+    if (pageLoaded) {
+
+        clearInterval(loader);
+
+        progressBar.style.width = "100%";
 
         setTimeout(() => {
 
-            preloader.remove();
+            preloader.classList.add("hide");
 
-        }, 600);
+            document.body.classList.remove("loading");
 
-    }, 1500);
+            setTimeout(() => {
+
+                preloader.remove();
+
+            }, 600);
+
+        }, 400);
+
+    }
+
+}, 120);
+
+window.addEventListener("load", () => {
+
+    pageLoaded = true;
 
 });
 
