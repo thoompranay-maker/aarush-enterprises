@@ -512,6 +512,8 @@ setInterval(updateStoreStatus, 60000);
             PRELOADER
 ========================================== */
 
+document.body.classList.add("loading");
+
 window.addEventListener("load", () => {
 
     const preloader = document.getElementById("preloader");
@@ -519,6 +521,14 @@ window.addEventListener("load", () => {
     setTimeout(() => {
 
         preloader.classList.add("hide");
+
+        document.body.classList.remove("loading");
+
+        setTimeout(() => {
+
+            preloader.remove();
+
+        }, 600);
 
     }, 1500);
 
