@@ -187,3 +187,11 @@ body.loading{
         transform .8s ease;
 
 }
+
+#pageContent.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
