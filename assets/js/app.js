@@ -242,3 +242,37 @@ if (mobile) {
 /*=========================================
         PREMIUM HERO ORBIT END
 =========================================*/
+
+/*=========================================
+        NAVBAR SCROLL EFFECT START
+=========================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const navbar = document.querySelector(".custom-navbar");
+
+    if (!navbar) return;
+
+    function updateNavbar() {
+
+        if (window.scrollY > 40) {
+
+            navbar.classList.add("scrolled");
+
+        } else {
+
+            navbar.classList.remove("scrolled");
+
+        }
+
+    }
+
+    updateNavbar();
+
+    window.addEventListener("scroll", updateNavbar);
+
+});
+
+/*=========================================
+        NAVBAR SCROLL EFFECT END
+=========================================*/
