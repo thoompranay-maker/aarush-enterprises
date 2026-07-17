@@ -455,7 +455,7 @@ function updateStoreStatus() {
 
     if (isOpen) {
 
-        status.textContent = "🟢 We're Open Now";
+        status.textContent = "🟢 Open Now";
 
         message.textContent =
             "Closes today at " +
@@ -465,7 +465,7 @@ function updateStoreStatus() {
 
     } else {
 
-        status.textContent = "🔴 We're Currently Closed";
+        status.textContent = "🔴 Currently Closed";
 
         indicator.style.background = "#ef4444";
 
