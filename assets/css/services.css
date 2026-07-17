@@ -117,6 +117,14 @@
 .service-card:hover .service-icon{
 
     background:var(--primary);
+            
+    transform:scale(1.08);
+
+.service-card:hover .service-icon::before{
+
+    opacity:1;
+
+}
            
 }
 
@@ -124,35 +132,81 @@
 
     color:#fff;
 
+    transform:scale(1.1);
+
 }
 
 .service-icon{
 
-    width:80px;
+    width:86px;
 
-    height:80px;
+    height:86px;
 
-    margin:auto;
+    margin:0 auto 28px;
 
     border-radius:50%;
 
-    background:#eef6ff;
-
     display:flex;
-
-    align-items:center;
 
     justify-content:center;
 
-    margin-bottom:25px;
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #f5f9ff,
+        #dfeeff
+    );
+
+    box-shadow:
+        0 10px 25px rgba(10,77,159,.10),
+        inset 0 2px 8px rgba(255,255,255,.7);
+
+    transition:all .35s ease;
+
+}
+
+.service-icon::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-25%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(10,77,159,.12),
+
+            transparent 70%
+
+        );
+
+    opacity:0;
+
+    transition:.35s ease;
 
 }
 
 .service-icon i{
 
-    font-size:32px;
+    font-size:34px;
 
     color:var(--primary);
+
+    position:relative;
+
+    z-index:2;
+
+    transition:all .35s ease;
 
 }
 
