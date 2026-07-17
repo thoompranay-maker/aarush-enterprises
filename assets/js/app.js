@@ -548,9 +548,9 @@ const loader = setInterval(() => {
 
                 preloader.remove();
 
-            }, 600);
+            }, 800);
 
-        }, 400);
+        }, 250);
 
     }
 
