@@ -269,3 +269,53 @@
     line-height:1.7;
 
 }
+
+/*=========================================
+        SERVICE LIST
+=========================================*/
+
+.service-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:20px 0 0;
+
+    text-align:left;
+
+}
+
+.service-list li{
+
+    position:relative;
+
+    padding-left:24px;
+
+    margin-bottom:12px;
+
+    color:var(--gray);
+
+    font-size:15px;
+
+    line-height:1.5;
+
+}
+
+.service-list li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/*=========================================
+        SERVICE LIST END
+=========================================*/
