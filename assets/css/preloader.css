@@ -29,6 +29,28 @@
 
     width:320px;
 
+            animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
 }
 
 .loader-logo{
@@ -117,3 +139,36 @@ body.loading{
     overflow:hidden;
 
 }
+
+.loader-logo{
+
+    width:90px;
+
+    margin-bottom:22px;
+
+    animation:logoFloat 2s ease-in-out infinite;
+
+}
+
+@keyframes logoFloat{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
