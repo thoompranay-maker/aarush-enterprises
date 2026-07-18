@@ -62,7 +62,11 @@
 
     height:150px;
 
-    background:#ffffff;
+    background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fbff 100%
+);
 
     border-radius:22px;
 
