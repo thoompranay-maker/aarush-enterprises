@@ -68,21 +68,24 @@ transition:
 
 .logo-glow{
 
-    position:absolute;
+    position: absolute;
 
-    width:120px;
+    width: 100px;
+
+    z-index: 1;
+
+    opacity: .55;
+
+    transform: scale(1.18);
 
     filter:
-        blur(16px)
-        brightness(1.8);
+    blur(10px)
+    drop-shadow(0 0 18px rgba(37,99,235,.65))
+    drop-shadow(0 0 36px rgba(37,99,235,.45));
 
-    opacity:.55;
+    animation: logoGlow 2.5s ease-in-out infinite;
 
-    transform:scale(1.12);
-
-    animation:logoGlow 2.5s ease-in-out infinite;
-
-    z-index:1;
+    pointer-events: none;
 
 }
 
@@ -172,21 +175,33 @@ body.loading{
     width:100px;
 
     z-index:2;
+
+        animation: logoFloat 2.5s ease-in-out infinite;
 }
 
 @keyframes logoGlow{
 
-    0%,100%{
+    0%{
 
-        opacity:.35;
-        transform:scale(1.08);
+        transform: scale(1.08);
+
+        opacity: .35;
 
     }
 
     50%{
 
-        opacity:.75;
-        transform:scale(1.16);
+        transform: scale(1.22);
+
+        opacity: .75;
+
+    }
+
+    100%{
+
+        transform: scale(1.08);
+
+        opacity: .35;
 
     }
 
@@ -196,19 +211,19 @@ body.loading{
 
     0%{
 
-        transform:translateY(0px);
+        transform: translateY(0px);
 
     }
 
     50%{
 
-        transform:translateY(-8px);
+        transform: translateY(-3px);
 
     }
 
     100%{
 
-        transform:translateY(0px);
+        transform: translateY(0px);
 
     }
 
