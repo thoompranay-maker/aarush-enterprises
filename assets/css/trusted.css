@@ -40,7 +40,7 @@
         TRACK
 ==========================================*/
 
-.trusted-track{
+    .trusted-track{
 
     display:flex;
 
@@ -50,7 +50,9 @@
 
     width:max-content;
 
-}
+    animation:trustedScroll 35s linear infinite;
+
+    }
 
 /*=========================================
         CARD
