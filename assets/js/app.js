@@ -542,6 +542,8 @@ const loader = setInterval(() => {
 
             preloader.classList.add("hide");
 
+                pageContent.classList.add("show");
+
             document.body.classList.remove("loading");
 
             setTimeout(() => {
