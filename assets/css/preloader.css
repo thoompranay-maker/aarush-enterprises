@@ -58,11 +58,11 @@ transition:
 
     position:relative;
 
-    width:110px;
+    display:inline-flex;
 
-    height:110px;
+    align-items:center;
 
-    margin:0 auto 24px;
+    justify-content:center;
 
 }
 
@@ -70,21 +70,17 @@ transition:
 
     position:absolute;
 
-    inset:0;
+    width:120px;
 
-    width:200px;
+    filter:
+        blur(16px)
+        brightness(1.8);
 
-    height:200px;
+    opacity:.55;
 
-    margin:auto;
+    transform:scale(1.12);
 
-    border-radius:50%;
-
-    background:rgba(37,99,235,.22);
-
-    filter:blur(24px);
-
-    animation:logoGlow 2.8s ease-in-out infinite;
+    animation:logoGlow 2.5s ease-in-out infinite;
 
     z-index:1;
 
@@ -173,11 +169,26 @@ body.loading{
 
     position:relative;
 
+    width:100px;
+
     z-index:2;
+}
 
-    width:95px;
+@keyframes logoGlow{
 
-    animation:logoFloat 2.8s ease-in-out infinite;
+    0%,100%{
+
+        opacity:.35;
+        transform:scale(1.08);
+
+    }
+
+    50%{
+
+        opacity:.75;
+        transform:scale(1.16);
+
+    }
 
 }
 
