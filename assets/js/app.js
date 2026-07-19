@@ -558,7 +558,15 @@ const preloader = document.getElementById("preloader");
 const progressBar = document.querySelector(".loader-bar span");
 
 let progress = 0;
+
 let pageLoaded = false;
+let minimumTimePassed = false;
+
+setTimeout(() => {
+
+    minimumTimePassed = true;
+
+}, 3000);
 
 const loader = setInterval(() => {
 
@@ -570,7 +578,7 @@ const loader = setInterval(() => {
 
     progressBar.style.width = progress + "%";
 
-    if (pageLoaded) {
+    if (pageLoaded && minimumTimePassed) {
 
         clearInterval(loader);
 
