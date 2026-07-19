@@ -192,24 +192,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function animate() {
 
-            const mobile = window.innerWidth <= 768;
+            const width = window.innerWidth;
 
-            let rx = radiusX;
-let ry = radiusY;
+let rx;
+let ry;
 
-if (mobile) {
+if (selector === ".outer-orbit") {
 
-    if (selector === ".outer-orbit") {
+    if (width <= 768) {
 
+        // Mobile
         rx = 200;
         ry = 125;
 
+    } else if (width <= 1200) {
+
+        // Tablets + Chrome Desktop Mode
+        rx = 290;
+        ry = 170;
+
+    } else if (width <= 1600) {
+
+        // Small laptops
+        rx = 360;
+        ry = 210;
+
     } else {
+
+        // Large desktop
+        rx = 430;
+        ry = 240;
+
+    }
+
+} else {
+
+    // Inner Orbit
+
+    if (width <= 768) {
 
         rx = 130;
         ry = 85;
 
+    } else if (width <= 1200) {
+
+        rx = 190;
+        ry = 105;
+
+    } else if (width <= 1600) {
+
+        rx = 240;
+        ry = 125;
+
+    } else {
+
+        rx = 300;
+        ry = 150;
+
     }
+
+}
 
             }
 
