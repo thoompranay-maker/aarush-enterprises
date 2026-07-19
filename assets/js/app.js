@@ -251,8 +251,6 @@ if (selector === ".outer-orbit") {
 
     }
 
-}
-
             }
 
             icons.forEach(icon => {
